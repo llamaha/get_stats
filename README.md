@@ -13,6 +13,7 @@ Create the file 'summoners.txt' and put summoner name and champion name separate
 summoner_name champion_name
 
 There are no spaces in champion names.  For example:
+
 lolplayer987 missfortune
 
 Then just run:
