@@ -19,7 +19,7 @@ def api_request(api_type):
    region = info['region']
    api_key = info['api_key']
    if api_type == "static":
-      url = join_url('static-data/oce/v1.2/champion?api_key={api_key}')
+      url = join_url('static-data/{region}/v1.2/champion?api_key={api_key}')
       query = requests.get(url.format(region=region, api_key=api_key))
    if api_type == "stats":
       url = join_url('{region}/v1.3/stats/by-summoner/{summoner_id}/ranked?season=SEASON4&api_key={api_key}')
